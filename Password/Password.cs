@@ -29,6 +29,11 @@ public class Password
             count++;
         }
 
+        if (x.Length >= 8)
+        {
+            count++;
+        }
+
         switch (count)
         {
             case 0:

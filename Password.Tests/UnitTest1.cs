@@ -31,4 +31,10 @@ public class UnitTest1
     {
         Assert.Equal("STRONG", Password.CheckPassword("@aA1"));
     }
+
+    [Fact]
+    public void ShouldCountLengthGreaterThan8()
+    {
+        Assert.Equal("STRONG", Password.CheckPassword("@aAAAAAA"));
+    }
 }
